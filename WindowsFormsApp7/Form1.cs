@@ -16,11 +16,14 @@ namespace WindowsFormsApp7
         {
             InitializeComponent();
         }
-       public static string films;
+        static public List<Button> Iorigin = new List<Button>();
+        static public List<Button> Intouchables = new List<Button>();
+        static public List<Button> TheWolfofWallWtreet = new List<Button>();
+        public static string films;
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
             films = comboBox1.Text;
+            Form2 form2 = new Form2();
             form2.Text = comboBox1.Text;
             form2.ShowDialog();
         }
